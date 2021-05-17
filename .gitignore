@@ -1,0 +1,23 @@
+# Configuration
+/config/parameters.yml
+
+# Composer
+/.htaccess
+/composer.lock
+/vendor/
+
+# Contao Manager
+/contao-manager/
+
+# Generated folders
+/assets/
+/files/content/
+/system/*
+!/system/config/
+/system/config/localconfig.php
+/system/config/tcpdf.php
+/var/
+/web/
+
+# Skip files
+/system/modules/*/.skip
