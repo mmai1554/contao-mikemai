@@ -1,0 +1,28 @@
+<div class="item_song row<?php echo $this->class; ?>">
+    <h3><?php echo $this->headline; ?></h3>
+    <h5 class="subheader"><?php echo $this->subheadline; ?></h5>
+
+    <div class="large-4 small-12 columns">
+        <figure class="image_container<?php echo $this->floatClass; ?>"<?php if ($this->margin || $this->float): ?> style="<?php echo trim($this->margin . $this->float); ?>"<?php endif; ?>>
+            <?php if ($this->href): ?>
+            <a href="<?php echo $this->href; ?>"<?php echo $this->attributes; ?> title="<?php echo $this->alt; ?>">
+                <?php endif; ?>
+                <img src="<?php echo $this->src; ?>"<?php echo $this->imgSize; ?> alt="<?php echo $this->alt; ?>">
+                <?php if ($this->href): ?>
+            </a>
+        <?php endif; ?>
+            <?php if ($this->caption): ?>
+                <figcaption class="caption" style="width:<?php echo $this->arrSize[0]; ?>px"><?php echo $this->caption; ?></figcaption>
+            <?php endif; ?>
+        </figure>
+    </div>
+    <div class="large-8 small-12 columns">
+
+        <div class="teaser">
+            <?php echo $this->teaser; ?>
+        </div>
+        <p><a class="button" href="<?= $this->link ?>">Bitte, ich möchte jetzt <?= $this->headline; ?> unbedingt hören.
+                Bitte!</a></p>
+    </div>
+</div>
+

@@ -1,0 +1,17 @@
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+
+<div class="captainjack">
+    <?php $this->insert('image', $this->arrData); ?>
+    <div>
+        <?= $this->text ?>
+    </div>
+</div>
+
+
+<div class="zugluftstopper">
+    <img src="/files/frame/zugluftstopper.png" alt="Zugluftstopper">
+</div>
+
+<?php $this->endblock(); ?>

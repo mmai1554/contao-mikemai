@@ -1,0 +1,30 @@
+
+<!-- indexer::stop -->
+<div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+<?php if ($this->headline): ?>
+
+<<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
+<?php endif; ?>
+
+<table>
+    <tr>
+<?php if ($this->prevHref): ?>
+  <td class="prev"><a href="<?php echo $this->prevHref; ?>" title="<?php echo $this->prevPageTitle; ?>">&lt; <?php echo $this->prevLink; ?></a></td>
+<?php else: ?>
+  
+<?php endif; ?>
+<?php if ($this->upHref): ?>
+  <td class="up"><a href="<?php echo $this->upHref; ?>" title="<?php echo $this->upPageTitle; ?>"><?php echo $this->upLink; ?></a></td>
+<?php else: ?>
+  
+<?php endif; ?>
+<?php if ($this->nextHref): ?>
+  <td class="next"><a href="<?php echo $this->nextHref; ?>" title="<?php echo $this->nextPageTitle; ?>"><?php echo $this->nextLink; ?> &gt;</a></td>
+<?php else: ?>
+  
+<?php endif; ?>
+  </tr>
+</table>
+
+</div>
+<!-- indexer::continue -->

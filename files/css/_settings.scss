@@ -1,0 +1,37 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+// overwrite foundation:
+$primary-color: #A42F08 !default;
+@import "../../assets/foundation/sass/app";
+
+@font-face {
+  font-family: 'droid_serifregular';
+  src: url('../../tl_files/css/fonts/droidserif-webfont.eot');
+  src: url('../../tl_files/css/fonts/droidserif-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../../tl_files/css/fonts/droidserif-webfont.woff') format('woff'),
+  url('../../tl_files/css/fonts/droidserif-webfont.ttf') format('truetype'),
+  url('../../tl_files/css/fonts/droidserif-webfont.svg#droid_serifregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'droid_serifbold';
+  src: url('../../tl_files/css/tl_files/css/fonts/droidserif-bold-webfont.eot');
+  src: url('../../tl_files/css/fonts/droidserif-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../../tl_files/css/fonts/droidserif-bold-webfont.woff') format('woff'),
+  url('../../tl_files/css/fonts/droidserif-bold-webfont.ttf') format('truetype'),
+  url('../../tl_files/css/fonts/droidserif-bold-webfont.svg#droid_serifbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$mmai_gruen: #216F21;
+$mmai_header_font:droid_serifbold;
+
+@mixin mmai_header {
+  font-family:$mmai_header_font,sans-serif;
+  color:$mmai_gruen;
+}
+
+
+

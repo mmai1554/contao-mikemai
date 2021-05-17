@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="<?php echo $this->language; ?>"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="<?php echo $this->language; ?>"> <!--<![endif]-->
+
+<head>
+    <meta charset="<?php echo $this->charset; ?>">
+    <title><?php echo $this->pageTitle; ?> - <?php echo $this->mainTitle; ?></title>
+    <base href="<?php echo $this->base; ?>">
+    <meta name="robots" content="<?php echo $this->robots; ?>">
+    <meta name="description" content="<?php echo $this->description; ?>">
+    <meta name="keywords" content="<?php echo $this->keywords; ?>">
+    <meta name="generator" content="Contao Open Source CMS with Foundation 4">
+    <meta name="viewport" content="width=device-width"/>
+    <?php echo $this->framework; ?>
+    <!--suppress HtmlUnknownTarget -->
+    <link href="css/mikemai.css" rel="stylesheet" media="screen">
+    <script src="<?php echo TL_ASSETS_URL; ?>assets/foundation/js/vendor/custom.modernizr.js"></script>
+    <?php echo $this->mooScripts; ?>
+    <?php echo $this->head; ?>
+</head>
+<body id="top"
+      class="{{ua::class}}<?php if ($this->class): ?> <?php echo $this->class; ?><?php endif; ?>"<?php if ($this->onload): ?> onload="<?php echo $this->onload; ?>"<?php endif; ?>>
+
+<div id="wrapper">
+    <header id="header" class="row">
+        <div class="inside">
+            <?php echo $this->header; ?>
+        </div>
+    </header>
+    <div id="container" class="row">
+        <div id="main">
+            <div class="small-12 large-8 columns">
+                <?php echo $this->main; ?>
+            </div>
+        </div>
+        <?php if ($this->left): ?>
+        <aside id="left">
+            <div class="inside">
+            <?php echo $this->left; ?>
+            </div>
+        </aside>
+    <?php endif; ?>
+    <?php if ($this->right): ?>
+        <aside id="right">
+            <div class="small-12 large-4 columns">
+                <?php echo $this->right; ?>
+            </div>
+        </aside>
+    <?php endif; ?>
+</div>
+
+<?php if ($this->footer): ?>
+    <footer id="footer" class="row">
+        <div class="inside small-12 columns">
+            <?php echo $this->footer; ?>
+        </div>
+    </footer>
+<?php endif; ?>
+
+
+<?php echo $this->mootools; ?>
+<script src="<?php echo TL_ASSETS_URL; ?>assets/foundation/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+</script>
+
+
+<?php if (!$this->disableCron): ?>
+    <script>
+        <?php if ($this->layout->addJQuery): ?>
+        setTimeout(function () {
+            jQuery.ajax("system/cron/cron.txt", {complete: function (e) {
+                var t = e.responseText || 0;
+                parseInt(t) < Math.round(+(new Date) / 1e3) -<?php echo $this->cronTimeout; ?> && jQuery.ajax("system/cron/cron.php")
+            }})
+        }, 5e3)
+        <?php else: ?>
+        setTimeout(function () {
+            (new Request({url: "system/cron/cron.txt", onComplete: function (e) {
+                e || (e = 0), parseInt(e) < Math.round(+(new Date) / 1e3) -<?php echo $this->cronTimeout; ?> && (new Request({url: "system/cron/cron.php"})).get()
+            }})).get()
+        }, 5e3)
+        <?php endif; ?>
+    </script>
+<?php endif; ?>
+</body>
+</html>

@@ -1,0 +1,82 @@
+@import "settings";
+
+
+body {
+  background: transparent url("../frame/muttis_setzkaestlein.jpg") repeat-y;
+  min-height: 1996px;
+}
+
+html {
+  background-image:url("../frame/tapeten/t2.jpg");
+}
+
+
+#container {
+  background-color: #FFF;
+  @include grid-row;
+  & > #main, & > #right,  & > #left {
+    @include grid-column();
+  }
+
+  @media #{$small} {
+
+    & > #main {
+      @include grid-column(8);
+    }
+    & > #right {
+      @include grid-column(4);
+    }
+
+  }
+}
+
+#left nav ul, #right nav ul { @include side-nav('#222'); }
+
+#header {
+  @include grid-row;
+}
+
+#footer {
+  @include grid-row;
+  background-color: #FFF;
+  nav {
+    margin-top:5px;
+  }
+}
+
+h1,h2,h3 {
+  @include mmai_header;
+}
+
+
+
+
+.news {
+  .layout_latest {
+    h2 {
+       font-size: 1.1em;
+    }
+    figure {
+      display:inline-block;
+    }
+  }
+  .more {
+    clear:both;
+  }
+  .trenner {
+    background-image:url('../frame/super_trenny.gif');
+    background-repeat: repeat-x;
+    height:35px;
+    margin:1em 0;
+  }
+  .info {
+    color:#666;
+    font-size:75%;
+    text-align:left;
+  }
+}
+
+figcaption {
+  font-size:75%;
+  font-style: italic;
+}
