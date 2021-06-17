@@ -1,0 +1,21 @@
+<div id="tierranking">
+    <h2>Ranking Liste für Tiere</h2>
+    <p>Auch in einem Lustiger Zoo muss Konkurrenzdenken etabliert werden. Hier sieht man wie gut ein Tier ist:</p>
+    <table class="ranking">
+        <?php foreach ($this->arrRanking as $row): ?>
+            <tr>
+                <td class="">
+                    <h5 class="text-right"><?= $row['name'] ?></h5>
+                </td>
+                <td class="">
+                    <?php if ($row['votes'] == 0): ?>
+                        <div>Keiner mag dieses Tier!</div>
+                    <?php else: ?>
+                        <div class="tierbalken" style="width:<?= $row['width'] ?>%"></div>
+                        <div><?= $row['votes'] ?> Zoobesucher liken dieses Tier</div>
+                    <?php endif; ?>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+</div>

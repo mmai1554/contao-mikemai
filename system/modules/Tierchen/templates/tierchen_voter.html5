@@ -1,0 +1,9 @@
+<?php if($this->formSubmitted): ?>
+<h2>Na, herzlichen Dank, aber echt!</h2>
+<p><?= $this->stimmtext ?></p>
+<?php else: ?>
+    <div class="diervoter">
+        <?= $this->form ?>
+    </div>
+<?php endif; ?>
+<p class="text-center"><a href="{{link_url::derlustigerzoo}}">Und hier kommt man tatsächlich zurück zum Zoo...</a></p>
