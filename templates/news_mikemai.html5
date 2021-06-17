@@ -1,6 +1,6 @@
 <div class="layout_latest block<?php echo $this->class; ?>">
     <?php if ($this->hasMetaFields): ?>
-        <p class="info"><time datetime="<?php echo $this->datetime; ?>"><?php echo $this->date; ?></time> <?php echo $this->author; ?> <?php echo $this->commentCount; ?></p>
+        <p class="info"><time datetime="<?php echo $this->datetime; ?>"><?php echo date('d.m.Y', $this->tstamp) ?></time> <?php echo $this->author; ?> <?php echo $this->commentCount; ?></p>
     <?php endif; ?>
     <h2><?php echo $this->newsHeadline; ?></h2>
     <?php if ($this->addImage): ?>

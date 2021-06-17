@@ -11,7 +11,8 @@
         "contao/listing-bundle": "^4.11",
         "contao/manager-bundle": "4.11.*",
         "contao/news-bundle": "^4.11",
-        "contao/newsletter-bundle": "^4.11"
+        "contao/newsletter-bundle": "^4.11",
+        "madeyourday/contao-rocksolid-frontend-helper": "^2.0"
     },
     "conflict": {
         "contao-components/installer": "<1.3"
