@@ -14,6 +14,7 @@
 /files/content/
 /system/*
 !/system/config/
+!/system/modules/
 /system/config/localconfig.php
 /system/config/tcpdf.php
 /var/
