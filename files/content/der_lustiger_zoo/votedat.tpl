@@ -1,0 +1,1 @@
+a:11:{s:9:"aromahase";i:20;s:0:"";i:2;s:8:"schnecke";i:5;s:6:"hirsch";i:5;s:17:"blutigeleberfuchs";i:3;s:10:"donutschaf";i:1;s:10:"dummerdino";i:2;s:23:"strangulationspferdchen";i:1;s:11:"tarnelefant";i:3;s:12:"polizeipudel";i:2;s:12:"schaeferhund";i:1;}

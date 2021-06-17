@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<track>
+		<path>tl_files/mikemai/songs/02-geburtstag.mp3</path>
+		<title>Track 2 CD 1 - Der Auffahrunfall an Deinem Geburtstag</title>
+	</track>
+	<track>
+		<path>tl_files/mikemai/songs/rohversion1.mp3</path>
+		<title>Track 1023 CD 2 - Butter bei die Fische</title>
+	</track>
+	<track>
+		<path>tl_files/mikemai/songs/bionisches_gnu_master_roh2.mp3</path>
+		<title>Track troi CD 2 - Das bionische Gnu</title>
+	</track>		
+	<track>
+		<path>tl_files/mikemai/songs/09-oma.mp3</path>
+		<title>Letztemn Track CD 1 - Oma wo Du sein?</title>
+	</track>
+	<track>
+		<path>tl_files/mikemai/songs/schicksalsroulade_02.mp3</path>
+		<title>Track Irgendwas CD 2 - Die Schicksalsroulade</title>
+	</track>
+	<track>
+		<path>tl_files/mikemai/songs/08-nachmieter.mp3</path>
+		<title>8. Track CD 1 - Der typische Nachmieter</title>
+	</track>
+	<track>
+		<path>tl_files/mikemai/songs/sonnengott_master_roh.mp3</path>
+		<title>6. Track CD 1: Das Gold der Inkas (findet nicht mal die Bundeswehr)</title>
+	</track>
+</xml>

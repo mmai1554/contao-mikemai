@@ -1,0 +1,211 @@
+.zoo {
+    background-image:url(../../jetzt/der_lustiger_zoo/img/elefantback.gif);
+    background-repeat: repeat-x;
+    position: relative;
+}
+
+.zoo .titel {
+    position:absolute;
+    top:0px;
+    left:360px;
+
+}
+
+.frame_diervoter {
+    position: fixed;
+    top:100px;
+    left:20px;
+    border:0px solid #F0E0DB;
+    background-color:#FFF;
+}
+
+#diervote_ergebnis {
+    margin-top:20px;
+}
+
+.bdiervote {
+	-moz-box-shadow:inset 0px 1px 0px 0px #caefab;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) );
+	background:-moz-linear-gradient( center top, #77d42a 5%, #5cb811 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811');
+	background-color:#77d42a;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #268a16;
+	display:inline-block;
+	color:#306108;
+	font-family:Trebuchet MS;
+	font-size:15px;
+	font-weight:bold;
+	padding:3px 55px;
+	text-decoration:none;
+}.bdiervote:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) );
+	background:-moz-linear-gradient( center top, #5cb811 5%, #77d42a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');
+	background-color:#5cb811;
+}.bdiervote:active {
+	position:relative;
+	top:1px;
+}
+
+
+#NavTier {
+    position:relative;
+    width:100%;
+    height:500px;
+}
+
+#NavTier li {
+    list-style-type: none;
+}
+
+#NavTier span.inlink {
+    display:none;
+    visibility:hidden;
+}
+
+
+
+#NavTier a {
+    display:block;
+    position:absolute;
+    background-repeat:no-repeat !important;
+}
+
+a.blutigeleberfuchs {
+    background-image:url(../../jetzt/der_lustiger_zoo/img/schild_fuchs.gif);	
+    width:130px;
+    height:144px;	
+    left:300px;
+    top:10px;
+}
+
+a.strangi {
+    display:block;
+    background-repeat:no-repeat;
+    position:absolute;
+    background-image:url(../../jetzt/der_lustiger_zoo/img/schild_strangulationspferdchen.gif);
+    width:150px;
+    height:106px;
+    left:450px;
+    top:30px;
+}
+
+a.tarnelefant {
+    background-image:url(../../jetzt/der_lustiger_zoo/img/schild_tarnelefant.gif);
+    width:144px;
+    height:100px;
+    left:370px;
+    top:130px;
+}
+
+a.polizeipudel {
+    background-image:url(../../jetzt/der_lustiger_zoo/img/schild_polizeipudel.gif);
+    width:150px;
+    height:107px;
+    left:160px;
+    top:17px;
+}
+
+a.schnecke {
+    background-image:url(../../jetzt/der_lustiger_zoo/img/schild_schnecke.gif);
+    width:160px;
+    height:103px;
+    left:0px;
+    top:0px;
+}
+
+a.trichedings {
+    background-image:url(../../jetzt/der_lustiger_zoo/img/schild_trichedings.gif);
+    width:150px;
+    height:160px;
+    left:605px;
+    top:43px;
+}
+
+a.aromahase {
+    background-image:url(../../jetzt/der_lustiger_zoo/img/schild_aromahase.gif);
+    width:135px;
+    height:112px;
+    left:0px;
+    top:120px;
+}
+
+.aromahase {
+    background-image:url(../../jetzt/der_lustiger_zoo/img/backbumpf.jpg);        
+}
+
+.schnecke {
+    background-image:url(../../jetzt/der_lustiger_zoo/img/backermp.jpg);        
+}
+
+
+a.schaeferhund {
+    background-image:url(../../jetzt/der_lustiger_zoo/img/schild_schaeferhund.gif);
+    width:150px;
+    height:124px;
+    left:180px;
+    top:135px;
+}
+
+a.donutschaf {
+    background-image:url(../../jetzt/der_lustiger_zoo/img/schild_donutschaf.gif);
+    width:130px;
+    height:110px;
+    left:520px;
+    top:180px;
+    z-index:99;
+}
+
+a.hirsch {
+    background-image:url(../../jetzt/der_lustiger_zoo/img/schild_hirsch.gif);
+    width:119px;
+    height:142px;
+    left:320px;
+    top:210px;
+    z-index:99;
+}
+
+.tierfoto {
+    width:600px;
+    font-family:"Times New Roman",Times,FreeSerif,serif;
+    margin:10px auto;
+    text-align:center;
+    background-color: #FFF;
+}
+
+.tierfoto .image {
+    margin:0px auto;
+}
+
+.tierfoto h2 {
+    background-color: #F0E0DB;
+    padding:10px;
+    font-size:30px;
+}
+
+.tierfoto td {
+    border:2px solid #FF6633;
+    text-align: left;
+    padding:4px;
+    vertical-align: top;
+}
+
+.tierfoto .col0 {
+    background-color:#EEE;
+    font-weight:bold;
+    width:150px;
+}
+
+.ranky {
+    height:30px;
+    vertical-align:central;
+    text-align: center;
+    padding:1px 0px;;
+    background-color: #FF6633;
+    border:1px solid #268a16;    
+}
